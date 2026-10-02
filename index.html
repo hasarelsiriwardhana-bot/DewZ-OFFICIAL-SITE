@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Who's DewZ Official</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Animated background -->
+  <div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar glass">
+    <div class="logo">
+      <span>Who's</span> DewZ
+    </div>
+
+    <div class="nav-links">
+      <button onclick="scrollToSection('fonts')">Font</button>
+      <button onclick="scrollToSection('hashtags')">Viral Tips</button>
+      <button onclick="scrollToSection('photos')">Background</button>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-content glass">
+
+      <div class="badge">
+        ✦ OFFICIAL CREATOR HUB
+      </div>
+
+      <h1>
+        Who's <span>DewZ</span>
+      </h1>
+
+      <p>
+        Fonts • Viral Hashtags • Background Photos
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="main-btn" onclick="scrollToSection('fonts')">
+          <span>Font</span>
+          <b>→</b>
+        </button>
+
+        <button class="main-btn" onclick="scrollToSection('hashtags')">
+          <span>Viral Tips</span>
+          <b>→</b>
+        </button>
+
+        <button class="main-btn" onclick="scrollToSection('photos')">
+          <span>Background Photo</span>
+          <b>→</b>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- FONT SECTION -->
+  <section id="fonts" class="section">
+
+    <div class="section-card glass">
+
+      <div class="section-number">01</div>
+
+      <h2>Beautiful Fonts</h2>
+
+      <p>
+        Discover and download the latest fonts for your edits.
+      </p>
+
+      <a
+        class="blue-button"
+        href="https://drive.google.com/drive/folders/1enDyQfeiAEu6l9kdFW_ZeSzSLj-jJ3Jf"
+        target="_blank"
+      >
+        Open Font Collection
+        <span>↗</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- HASHTAGS -->
+  <section id="hashtags" class="section">
+
+    <div class="section-card glass">
+
+      <div class="section-number">02</div>
+
+      <h2>Viral Hashtags</h2>
+
+      <p>
+        Most popular tags for your TikTok content.
+      </p>
+
+      <div class="hashtags">
+
+        <div class="tag">#foryou</div>
+        <div class="tag">#foryoupage</div>
+        <div class="tag">#popular</div>
+        <div class="tag">#trending</div>
+        <div class="tag">#viral</div>
+
+      </div>
+
+      <button class="copy-button" onclick="copyHashtags()">
+        Copy All Hashtags
+      </button>
+
+      <div id="copyMessage"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHOTO SECTION -->
+  <section id="photos" class="section">
+
+    <div class="section-card glass">
+
+      <div class="section-number">03</div>
+
+      <h2>Background Photos</h2>
+
+      <p>
+        Upload your favourite backgrounds and download them anytime.
+      </p>
+
+
+      <!-- Upload -->
+      <label class="upload-box">
+
+        <input
+          type="file"
+          id="photoInput"
+          accept="image/*"
+          multiple
+        >
+
+        <div class="plus">
+          +
+        </div>
+
+        <strong>
+          Add Background Photos
+        </strong>
+
+        <span>
+          JPG, PNG, WEBP
+        </span>
+
+      </label>
+
+
+      <!-- Photos appear here -->
+      <div id="photoGallery" class="photo-gallery"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MORE DETAILS -->
+  <section class="details">
+
+    <div class="details-card glass">
+
+      <h2>More Details</h2>
+
+      <p>
+        Need more information? Contact us directly on WhatsApp.
+      </p>
+
+      <a
+        href="https://wa.me/94764710434?text=Hello%20DewZ%2C%20I%20need%20more%20details."
+        target="_blank"
+        class="whatsapp"
+      >
+
+        <span class="whatsapp-icon">◉</span>
+
+        <span>
+          Message on WhatsApp
+        </span>
+
+        <b>→</b>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      Who's <span>DewZ</span>
+    </div>
+
+    <p>
+      © 2026 Who's DewZ Official. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
